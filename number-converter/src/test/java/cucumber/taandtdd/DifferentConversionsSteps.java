@@ -10,35 +10,34 @@ import java.util.List;
 import com.anecon.taandtdd.BinaryConverter;
 import com.anecon.taandtdd.DecimalConverter;
 import com.anecon.taandtdd.HexadecimalConverter;
-import com.anecon.taandtdd.NumberConverter;
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.anecon.taandtdd.NumberConverterWrapper;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class DifferentConversionsSteps {
 
-	private List<Integer> inputNumbers = new ArrayList<>();
-	private NumberConverter converter = null;
+	private List<String> inputNumbers = new ArrayList<>();
+	private NumberConverterWrapper converter = null;
 
 	@Given("^a list of numbers$")
-	public void a_list_of_numbers(List<Integer> numbers) throws Throwable {
+	public void a_list_of_numbers(List<String> numbers) throws Throwable {
 		this.inputNumbers.addAll(numbers);
 	}
 
 	@When("^I convert it to a decimal$")
 	public void i_convert_it_to_a_decimal() throws Throwable {
-		converter = new DecimalConverter();
+		converter = new NumberConverterWrapper(new DecimalConverter());
 	}
 
 	@When("^I convert it a binary$")
 	public void i_convert_it_a_binary() throws Throwable {
-		converter = new BinaryConverter();
+		converter = new NumberConverterWrapper(new BinaryConverter());
 	}
 
 	@When("^I convert it a hexadecimal$")
 	public void i_convert_it_a_hexadecimal() throws Throwable {
-		converter = new HexadecimalConverter();
+		converter = new NumberConverterWrapper(new HexadecimalConverter());
 	}
 
 	@Then("^the result is:$")

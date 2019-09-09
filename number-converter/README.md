@@ -19,3 +19,10 @@ Implement the cucumber steps to test the requirements defined in ConvertingIntoD
 
 ## 2. Exercise
 Enhance your tests and the legacy code base to implement the new requirements defined in ConvertingIllegalNumbers.feature.
+
+## 3. Exercise
+- Enhance your requirements with specifications for a Roman number converter  
+- Implement a RomanConverter by using TDD
+- Add the glue code to instantiate your new RomanConverter correctly (you can add it as soon it is available i.e. before you complete TDD loop)
+
+
