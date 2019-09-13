@@ -1,12 +1,12 @@
-package cucumber.taandtdd;
+package cucumber.numberconverter;
 
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
-import com.anecon.taandtdd.ConverterException;
-import com.anecon.taandtdd.DecimalConverter;
-import com.anecon.taandtdd.NumberConverterWrapper;
+import numberconverter.ConverterException;
+import numberconverter.DecimalConverter;
+import numberconverter.NumberConverterWrapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

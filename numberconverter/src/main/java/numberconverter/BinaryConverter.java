@@ -1,4 +1,4 @@
-package com.anecon.taandtdd;
+package numberconverter;
 
 public class BinaryConverter implements NumberConverter {
 

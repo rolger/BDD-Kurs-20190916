@@ -1,4 +1,4 @@
-package cucumber.taandtdd;
+package cucumber.numberconverter;
 
 import static java.util.stream.Collectors.toList;
 import static org.hamcrest.CoreMatchers.is;
@@ -7,10 +7,10 @@ import static org.junit.Assert.assertThat;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.anecon.taandtdd.BinaryConverter;
-import com.anecon.taandtdd.DecimalConverter;
-import com.anecon.taandtdd.HexadecimalConverter;
-import com.anecon.taandtdd.NumberConverterWrapper;
+import numberconverter.BinaryConverter;
+import numberconverter.DecimalConverter;
+import numberconverter.HexadecimalConverter;
+import numberconverter.NumberConverterWrapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
