@@ -1,4 +1,4 @@
-package com.anecon.taandtdd;
+package numberconverter;
 
 public class ConverterException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
