@@ -1,4 +1,5 @@
 # Instructions for ATDD exercises 
+Use a different branches for each exercise.
 
 ## The legacy code
 The legacy code is a simple number converter. At the beginning you'll find some converters 
@@ -19,3 +20,4 @@ Implement the cucumber steps to test the requirements defined in ConvertingIntoD
 
 ## 2. Exercise
 Enhance your tests and the legacy code base to implement the new requirements defined in ConvertingIllegalNumbers.feature.
+
