@@ -40,6 +40,11 @@ public class DifferentConversionsSteps {
 		converter = new NumberConverterWrapper(new HexadecimalConverter());
 	}
 
+	@When("I convert it to a Roman")
+	public void i_convert_it_to_a_Roman() {
+		throw new cucumber.api.PendingException();
+	}
+
 	@Then("^the result is:$")
 	public void the_result_is(List<String> result) throws Throwable {
 		List<String> convertedNumbers = inputNumbers.stream() //
